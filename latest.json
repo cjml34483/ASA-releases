@@ -1,11 +1,11 @@
 {
-  "version": "1.0.8",
-  "notes": "Baseline release — auto-updater bootstrap.",
-  "pub_date": "2026-04-22T12:06:45Z",
+  "version": "1.0.9",
+  "notes": "Signal/Manual attribution + close reason tracking + TP/SL modification detection.",
+  "pub_date": "2026-04-22T14:27:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTDROUFcxZGQ0UWxtdjNaVHlhSS9wSkdMZ3psRmUyUVkrWWtpSWNaMDhSbWJ4ajU0R04rck8vaHJpY0pnbVRHZkh2cXZjZnFlbDZYWktUWFVXSkdhbENyRHlraklraXdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2ODU4OTM3CWZpbGU6VHJhZGVTcGFjZV8xLjAuOF94NjQtc2V0dXAuZXhlClluNDY3QnFhN2dEY1daMkJEMzZMUFhrVlRsQk96dFJ4U1Zwa1BuSEhPVWlBSnpSTlp2N0Q4OENrcjBzc1dVTTBZSUcyNmg5MHhxMmd6eWU1VUZoa0N3PT0K",
-      "url": "https://github.com/cjml34483/TradeSpace-releases/releases/download/v1.0.8/TradeSpace_1.0.8_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTDROUFcxZGQ0UXFTUG51SXVGeit0NHozZXIwaUZ1YmtGcDZReno2WVdnbU14SXc2Vjllc3hCYjU0WXNPcUV2L0MrVVlUTmM5dXl3OUtOVVIzTHRUWmJOSXVuMkRiNFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2ODY0NDUxCWZpbGU6VHJhZGVTcGFjZV8xLjAuOV94NjQtc2V0dXAuZXhlCkFoTS9xNjVuM3YyUGNIa2NvM3ducUZpaEhVNXZSZU9PT2Q2bzUvakU4cDZFZ2hpcWh1UjUvM1pxZFVFSEQ5aEJhOEp3dmNkK0k3ZlBWMjBRN3l6RUFRPT0K",
+      "url": "https://github.com/cjml34483/TradeSpace-releases/releases/download/v1.0.9/TradeSpace_1.0.9_x64-setup.exe"
     }
   }
 }
