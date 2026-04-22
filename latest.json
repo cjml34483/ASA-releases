@@ -1,11 +1,11 @@
 {
-  "version": "1.0.11",
-  "notes": "Trader-first UX: history expansion simplified, Provider Intelligence now a sortable table. Fixed: trailing-stop / BE / partial exits no longer mis-labeled as 'manually closed'. Provider backfill for historic 'Unknown signal source' rows.",
-  "pub_date": "2026-04-22T18:40:29Z",
+  "version": "v1.0.12",
+  "notes": "Trader-first UX polish + dashboard timeline. Fixed: signal TP/SL now captured on every signal-origin trade (+ backfill migration 12). Changed: Provider Intelligence Recent Trades table alignment fixed + quality score shows as NN/100 with color-coded grade badge. History expansion now shows a vertical lifecycle timeline (entry, SL/TP mods, close) instead of a flat mod-audit table. Release infra: latest.json correctly points at the signed .exe; v1.0.11 shipped identically from the updater's perspective but the script had a wrong assertion that aborted every release.",
+  "pub_date": "2026-04-22T19:58:50Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTDROUFcxZGQ0UWptS01ObFpXNVBVeDRUTzNtcWluVkVHOVo2MmhLTlZ3OFlmaEplbTBRMzB0RktOQVp1UDhmNm4xamN1THdvOTYxcm95Znd2THBqVThkcURZNHA3d2dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2ODgzMTQ0CWZpbGU6VHJhZGVTcGFjZV8xLjAuMTFfeDY0LXNldHVwLmV4ZQpNSjJLQkI4L2lUb1ZjTkVkMmxyd3RwekVzV1lwSmhBRlpRcjduNG5qVGZ5Vmh4L1VsS0R5RGVPQWJQU2tPTzk3TzViNW50SDliV3NSSVJocGNnUnhBQT09Cg==",
-      "url": "https://github.com/cjml34483/TradeSpace-releases/releases/download/v1.0.11/TradeSpace_1.0.11_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTDROUFcxZGQ0UW03aDN4WTROT2dCNlpqQ1RpTG1XYk1vTVB2TkpRMm1mRjNaMnFEbTU5RWRUbXNzR2VJZ1I1eHV0UXhwYUVWeDZOcll4cThoanpZN0hFaVlPQjlsR3dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2ODg3ODIyCWZpbGU6VHJhZGVTcGFjZV8xLjAuMTJfeDY0LXNldHVwLmV4ZQpwaW8vQ1hXa1hGV1dVM3NWRnVmK3BGTElhVzd3eGxNcHhlVUZpbTNHRHFuL3dFVlh5bWJkTUphUVpiSVl6N0JOazlyb0sxRkltMEcxR0Z5Q0RoQUlCUT09Cg==",
+      "url": "https://github.com/cjml34483/TradeSpace-releases/releases/download/v1.0.12/TradeSpace_1.0.12_x64-setup.exe"
     }
   }
 }
