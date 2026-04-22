@@ -1,11 +1,11 @@
 {
-  "version": "1.0.9",
-  "notes": "Signal/Manual attribution + close reason tracking + TP/SL modification detection.",
-  "pub_date": "2026-04-22T14:27:00Z",
+  "version": "1.0.10",
+  "notes": "Provider attribution resilience (never show generic 'Signal') + inline history row expansion + background update check with tray badge and banner.",
+  "pub_date": "2026-04-22T15:30:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTDROUFcxZGQ0UXFTUG51SXVGeit0NHozZXIwaUZ1YmtGcDZReno2WVdnbU14SXc2Vjllc3hCYjU0WXNPcUV2L0MrVVlUTmM5dXl3OUtOVVIzTHRUWmJOSXVuMkRiNFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2ODY0NDUxCWZpbGU6VHJhZGVTcGFjZV8xLjAuOV94NjQtc2V0dXAuZXhlCkFoTS9xNjVuM3YyUGNIa2NvM3ducUZpaEhVNXZSZU9PT2Q2bzUvakU4cDZFZ2hpcWh1UjUvM1pxZFVFSEQ5aEJhOEp3dmNkK0k3ZlBWMjBRN3l6RUFRPT0K",
-      "url": "https://github.com/cjml34483/TradeSpace-releases/releases/download/v1.0.9/TradeSpace_1.0.9_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTDROUFcxZGQ0UWp5WFlIYy8rRC9IdGU3OFhUTDB0RC9VQzl5T0tBalBzTHVLYjNiSjI0Q2RBZGlBL0xjcFZJWWVnVElxdWdObkpvanR6M01VK3k1Y3NFMW5MeFBURXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2ODcwNjI5CWZpbGU6VHJhZGVTcGFjZV8xLjAuMTBfeDY0LXNldHVwLmV4ZQpnbTVxREJmcytFaVYrOUNnODd1dUZma3FUbGNvbnYrd0MxWEdFakhmN1oydEFqZlpGd0FFK2ZuU3B4NnpkTDlYdjE0UHc0V29SZE5tR2gzN1FPakVBQT09Cg==",
+      "url": "https://github.com/cjml34483/TradeSpace-releases/releases/download/v1.0.10/TradeSpace_1.0.10_x64-setup.exe"
     }
   }
 }
