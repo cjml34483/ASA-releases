@@ -1,11 +1,11 @@
 {
-  "version": "v1.0.36",
-  "notes": "v1.0.36 fixes the remaining icon-quality issues from v1.0.35: switches the icon source from raster (wordmark-master.png) to vector (asa-wordmark-master.svg + asa-glyph-s.svg) so every output size is rasterized fresh with 4x supersample + LANCZOS downscale (no raster re-resampling); unifies the brand green to phosphor #5FFF7E across light and dark themes (was forest #0A4F2C in light); restores the multi-shade folded-S detail at icon sizes >=64 (phosphor base + dark fold accents in S-flow direction + lighter highlight strips); centres the glyph in its canvas at every output size (verified L/R T/B margins symmetric within +/-1px). No functional changes for the trading engine. Same Tauri identifier as v1.0.30->v1.0.35, so v1.0.35 users update via the in-app updater.",
-  "pub_date": "2026-05-03T15:58:14Z",
+  "version": "v1.0.37",
+  "notes": "v1.0.37 replaces the v1.0.36 hand-coded SVG-path approximation with a TRUE 1:1 raster->vector trace of the brand image. branding/png/wordmark-master.png is fed through vtracer (a real raster->vector converter) and the resulting paths become the canonical source of truth. scripts/build_icon.py is reduced to a renderer; all hand-coded S_PHOSPHOR_BARS / S_DARK_FOLD / A_OUTLINE polygon lists are gone. Pixel-diff of the rendered vectorization vs the source raster: 98.59% match within +/-24/255 channel tolerance, 99.66% within +/-64/255. Light-mode variants are produced by SVG-text recolor (#FFFFFF -> #1A1C1F for A's) BEFORE rasterization. Product naming: tauri.conf.json productName 'ASA Terminal' -> 'ASA' (window title + installer filename now drop the 'Terminal' suffix; bundle identifier com.asasystems.terminal stays unchanged for auto-updater compat). No functional changes for the trading engine. v1.0.36 -> v1.0.37 auto-updates cleanly because the Tauri identifier is unchanged.",
+  "pub_date": "2026-05-03T18:03:31Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTDROUFcxZGQ0UWg4VnNOdHlZWFlOYUhPNEl5a1JjaTh4a3ppaUhNOU1qR2w1ZHlIUnBHczREc1R0QjJsQW8yUC9kdDdyOExZb2JZRHd3WXNXcTBjVGFPb0xxTmlBMWc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc3ODIzNzk5CWZpbGU6QVNBIFRlcm1pbmFsXzEuMC4zNl94NjQtc2V0dXAuZXhlClZtZmZFMVJ3SGZtdWYzak9uc2I5YmM3UHoza2Q2dVIvUlVVOENPK1BTWGlON1RPdUtOODRsUVJLTndZdlVTaE9neDVpYWY3Z2ZSSlc1c0xtL0svbkRnPT0K",
-      "url": "https://github.com/cjml34483/TradeSpace-releases/releases/download/v1.0.36/ASA.Terminal_1.0.36_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTDROUFcxZGQ0UWdMQlpBWTYrQ1oxTExzb1dPZGxMdjZ3S3lCbE5CNUsyakhzT0Q2ZlZXeFUyWlYrb0VRdWwyREhlUWJwOElVcVRPS3RKNWpiYnBaUXp4Y3M1NnNnTncwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc3ODMwODI5CWZpbGU6QVNBXzEuMC4zN194NjQtc2V0dXAuZXhlCkNjY0Z5aFg0N3JscjlQMllKbFBSWVZqcVJ0ZTlNZnBBY21RdzJlQS9PaTVVbUxhSHRqcnNZcFBvSjZuWHM4ZzlwanA5UFNCczdHdnkvOVM1WWtEa0JnPT0K",
+      "url": "https://github.com/cjml34483/TradeSpace-releases/releases/download/v1.0.37/ASA_1.0.37_x64-setup.exe"
     }
   }
 }
