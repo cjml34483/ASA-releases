@@ -1,11 +1,11 @@
 {
-  "version": "v1.0.41",
-  "notes": "Visual polish: brand-green flip from #5FFF7E (phosphor) to #37AA35 (canonical, sampled from Copilot wordmark master), transparent-background wordmark across all surfaces, sidebar wordmark centered, NSIS wizard images regenerated with single ASA wordmark on charcoal (no duplicate S-box), simplified to single <img> per surface (dropped 1x/2x/3x srcset variants). Same auto-updater pipeline as v1.0.40 (single-base64 signature).",
-  "pub_date": "2026-05-04T09:17:36Z",
-  "platforms": {
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTDROUFcxZGQ0UWhtMmVHOFJpVUUzL3pXZk1VN3FUaEVBL3RSdkkyYkRkQldKeHpBNDdGZTdSOVNvd0JqM3RYcXREUmVBRnV2KzBtdkNWaWh0Q0dMNGRWOWJPRjlFSHc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc3ODg2MjAwCWZpbGU6QVNBXzEuMC40MV94NjQtc2V0dXAuZXhlCloyUG1hclR5UWZlN1NDekladzhPSWhHUERlblpITml1bUVVNURSSmM5NTFsY2V2OHY4OWZ4dE45enM0YXl4a2xiNjMxeHlhL00wZnRMR1J1UXE1RkN3PT0K",
-      "url": "https://github.com/cjml34483/TradeSpace-releases/releases/download/v1.0.41/ASA_1.0.41_x64-setup.exe"
-    }
-  }
+    "version":  "v1.0.42",
+    "notes":  "Chrome polish release. Sidebar wordmark sits more compactly within the navigation rhythm, the wordmark adapts cleanly between dark and light mode (charcoal A\u0027s on light backgrounds), and the Windows taskbar / in-app titlebar icon now matches the canonical `#37AA35` brand green from the Copilot wordmark master instead of the brighter `#58F878` phosphor that v1.0.30 - v1.0.41 inherited. No engine changes, same auto-updater pipeline, same `com.asasystems.terminal` identifier so v1.0.41 users update in-app the usual way.",
+    "pub_date":  "2026-05-04T10:58:29Z",
+    "platforms":  {
+                      "windows-x86_64":  {
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTDROUFcxZGQ0UXFOMUQrWU9SNytFWVFvZ0ZTTVdkSVJNZnNaaVlGUjA2Ymo1QmpxaUtDNjhiZnZkSHV6N0UvUWEyU1hGWVlHcDNndWdncU10UmN1OE8xOVVXVWxITEFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc3ODkyMzA4CWZpbGU6QVNBXzEuMC40Ml94NjQtc2V0dXAuZXhlCk5LT3FLWm1EdGtNLzJMWGlBVEpMZVRoTVBTd2lWTkJLeWdQaFZZYzc3clp3dDF0Z0laTElGNmEramc1akZraXh4amRqT3d2SElNM1FMd3hMbWozNUJRPT0K",
+                                             "url":  "https://github.com/cjml34483/TradeSpace-releases/releases/download/v1.0.42/ASA_1.0.42_x64-setup.exe"
+                                         }
+                  }
 }
