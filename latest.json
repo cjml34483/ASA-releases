@@ -1,11 +1,11 @@
 {
-    "version":  "v1.0.62",
-    "notes":  "Fix thank-you page download links, add download link to subscription email, remove dead upgrade_tier code, add GitHub Actions CI, TTL cleanup for webhook events, OG tags and risk disclaimers on landing page",
-    "pub_date":  "2026-05-23T16:43:10Z",
+    "version":  "v1.0.63",
+    "notes":  "v1.0.63 — Startup-latency fix. No behaviour changes; this release exists to get the sidecar fix below into installed builds.\r\n\r\n### Fixes\r\n\r\n- **Slow startup on installs with large webhook history.** The `DELETE` that prunes old `stripe_processed_events` rows ran synchronously in `main()` between `init_db()` and `socketio.run()`, so Flask couldn\u0027t bind port 5000 until the prune finished. On installs with a large idempotency table — or under WAL contention — this stretched the splash past its 12s slow-boot threshold and left users staring at \"Still starting — poll #46\". Cleanup is non-critical maintenance, so it now runs in a daemon thread and Flask starts serving immediately.\r\n\r\n---",
+    "pub_date":  "2026-05-23T19:05:28Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTDROUFcxZGQ0UWhBOVhvb0NNWmczODlkbEt3NDZWWkJNOXVDcklLUWd4L0d1TDcwT2EvWm1nalBKMnJQWXQ3cVA4cWFHRitVUXkyczJ4WW45N2tBcFpsUS91MUVWc3c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTU0NTg5CWZpbGU6QVNBIFRyYWRpbmcgU3lzdGVtcyBUZXJtaW5hbF8xLjAuNjJfeDY0LXNldHVwLmV4ZQpMcEpRdHdyQnN1NDRRSGgrS2VrV2RHTzhSQkRrZTdOUHVBaVNRbW5TOTVZWmxvSFVsQ0NSdnVuRnNRUjJNa2hwUU1ja3ZRTkVCTW51bjZHQVVrV0ZBQT09Cg==",
-                                             "url":  "https://github.com/cjml34483/ASA-releases/releases/download/v1.0.62/ASA.Trading.Systems.Terminal_1.0.62_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTDROUFcxZGQ0UW5IakZuUHZza1d0SHN3RjYvUnA1S0lsVUJLTEMyNWlHcXV0VlhrbEN2R1d0c2p3WWlSQ2hlUk90TUlQeUMzc3pyNjhRblZzbzJKM2RtNkYxTDRRTVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTYzMTI3CWZpbGU6QVNBIFRyYWRpbmcgU3lzdGVtcyBUZXJtaW5hbF8xLjAuNjNfeDY0LXNldHVwLmV4ZQo5ZkNkQ01mWXRNdnlPSldaU2VucEFJVjJBZnE1TDdKVndRVTdHWndRQUpuTXJzN0tBdGhRVFlkb0lOeGNJK2xPZlRNdytGQlpsTnFVWFdvQzdGUmhBQT09Cg==",
+                                             "url":  "https://github.com/cjml34483/ASA-releases/releases/download/v1.0.63/ASA.Trading.Systems.Terminal_1.0.63_x64-setup.exe"
                                          }
                   }
 }
